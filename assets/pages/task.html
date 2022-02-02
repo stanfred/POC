@@ -1,0 +1,41 @@
+<div class="cardBox">
+    <div class="card">
+      <div>
+      <div class="numbers">11</div>
+      <div class="cardName">Awaiting Tasks</div>
+     </div>
+     <div class="iconBx">
+       <ion-icon name="chatbox-outline"></ion-icon>
+     </div>
+    </div>
+    </div>
+<div class="tableBox">
+    <!-- <div class="recentOrders"  style="width: 125%;"> -->
+      <div class="tbox" >
+      <div class="cardHeader">
+        <h2>My Tasks</h2>
+      </div>
+      <table id="example">
+        <thead>
+          <tr>
+            <td>RequestNumber</td>
+            <td>Type</td>
+            <td>Status</td>
+            <td>Requestor</td>
+            <td>Amount</td>
+            <td style="text-align: center;">Action</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="dat in data">
+           <td>{{dat.requestNumber}}</td>
+           <td>{{dat.type}}</td>
+           <td><span class="status inprocess">{{dat.status}}</span></td>
+           <td>{{dat.requestor}}</td>
+           <td>{{dat.amount}}</td>
+           <td style="text-align: center;"><button class="btn-approve">Approve</button><button class="btn-reject">Reject</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>

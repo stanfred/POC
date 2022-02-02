@@ -1,0 +1,86 @@
+  <div class="cardBox">
+    <div class="card">
+      <div>
+      <div class="numbers">90</div>
+      <div class="cardName">Recent Requests</div>
+     </div>
+     <div class="iconBx">
+       <ion-icon name="eye-outline"></ion-icon>
+     </div>
+    </div>
+    </div>
+  <!-- Details List -->
+  <div class="details">
+  <div class="recentOrders">
+    <div class="cardHeader">
+      <h2>Recent Requests</h2>
+      <a ui-sref="task" class="btn">View All</a>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Queue</td>
+          <td>Status</td>
+          <td>Amount</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="data in row">
+         <td>{{data.name}}</td>
+         <td>{{data.queue}}</td>
+         <td><span class="status" ng-class="{success: data.class == 'Completed',halted:data.class == 'Rejected',inprocess:data.class == 'In Process'}">{{data.status}}</span></td>
+         <td>{{data.amount}}</td>
+        </tr>
+        <!-- <tr>
+         <td>Sivsakthi</td>
+         <td>AP Review</td>
+         <td><span class="status inprocess">In Process</span></td>
+         <td>$83</td>
+        </tr>
+        <tr>
+         <td>Francis</td>
+         <td>CMT Operator</td>
+         <td><span class="status success">Completed</span></td>
+         <td>$0232</td>
+        </tr>
+        <tr>
+         <td>Mahesh</td>
+         <td>Controller</td>
+         <td><span class="status inprocess">In Process</span></td>
+         <td>$98</td>
+        </tr>
+        <tr>
+         <td>Dhanalakshmi</td>
+         <td>Finance Director</td>
+         <td><span class="status halted">Rejected</span></td>
+         <td>$09</td>
+        </tr> -->
+        
+      </tbody>
+    </table>
+  </div>
+  <!-- New Customers -->
+  <div class="recentCustomers">
+    <div class="cardHeader">
+      <h2>Recent Transactions</h2>
+    </div>
+    <table>
+      <tr ng-repeat="data in extra">
+        <td><h4>{{data.name}}<br/><span>${{data.amount}}</span></h4></td>
+      </tr>
+      <!-- <tr>
+       <td><h4>Sivasakthi<br/><span>$56</span></h4></td>
+     </tr>
+     <tr>
+       <td><h4>Mahesh<br/><span>$76</span></h4></td>
+     </tr>
+     <tr>
+       <td><h4>Arumugam<br/><span>$32</span></h4></td>
+     </tr>
+     <tr>
+       <td><h4>Rajamani<br/><span>$87</span></h4></td>
+     </tr> -->
+    </table>
+  </div>
+  </div>

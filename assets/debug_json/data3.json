@@ -1,0 +1,28 @@
+{
+    "result": {
+      "resultAction": true,
+      "resultMessage": ""
+    },
+    "oData": [
+    {
+      "name":"Stanley",
+      "amount":"1000.00"
+    },
+    {
+        "name":"Mahesh",
+        "amount":"89732.00"
+      },{
+        "name":"Dhanalakshmi",
+        "amount":"2323.00"
+      },{
+        "name":"Sivasakthi",
+        "amount":"2323.00"
+      },{
+        "name":"Nandita",
+        "amount":"3232.00"
+      },{
+        "name":"Thirooban",
+        "amount":"1000.00"
+      }
+    ]
+  }

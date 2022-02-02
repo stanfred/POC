@@ -1,0 +1,46 @@
+{
+    "result": {
+      "resultAction": true,
+      "resultMessage": ""
+    },
+    "oData": [
+    {
+      "name":"Stanley",
+      "queue":"AP Review",
+      "status":"Completed",
+      "amount":"1000.00",
+      "class":"Completed"
+    },
+    {
+        "name":"Mahesh",
+        "queue":"Controller",
+        "status":"In Process",
+        "amount":"89732.00",
+        "class":"In Process"
+      },{
+        "name":"Dhanalakshmi",
+        "queue":"Segment Specialist",
+        "status":"Rejected",
+        "amount":"2323.00",
+        "class":"Rejected"
+      },{
+        "name":"Sivasakthi",
+        "queue":"Credit Reviewer",
+        "status":"In Process",
+        "amount":"2323.00",
+        "class":"In Process"
+      },{
+        "name":"Nandita",
+        "queue":"Director",
+        "status":"Completed",
+        "amount":"3232.00",
+        "class":"Completed"
+      },{
+        "name":"Thirooban",
+        "queue":"Handle Reject",
+        "status":"Rejected",
+        "amount":"1000.00",
+        "class":"Rejected"
+      }
+    ]
+  }
